@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="90dp"
+    android:layout_height="125dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/place_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="3dp"
+        android:adjustViewBounds="true"
+        android:padding="2dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/circleImageView"
+        app:srcCompat="@drawable/side_nav_bar" />
+
+    <TextView
+        android:id="@+id/place_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:text="Nearby"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/place_image"
+        app:layout_constraintStart_toStartOf="@+id/place_image"
+        app:layout_constraintTop_toBottomOf="@+id/place_image" />
+</androidx.constraintlayout.widget.ConstraintLayout>

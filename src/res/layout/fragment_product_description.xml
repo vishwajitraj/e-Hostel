@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductDescriptionFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tv_product_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Hostels are hospitality businesses that have shared rooms and spaces.\n\nThe meaning of a hostel is that you only pay for your bed, and share the rest of the room's space with other people you don't know. Due to this co-habitation set-up, the prices for this type of stay are much more affordable."
+        android:textColor="#000000" />
+</FrameLayout>

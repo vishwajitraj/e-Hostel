@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:elevation="3dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:id="@+id/product_details"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/product_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/product_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="KCC Hostel 3-Seater"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Rs.9999/-"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/product_image"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/product_quentity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Qty: 1"
+        android:textColor="#000000"
+        android:background="@drawable/border_background"
+        android:backgroundTint="#000000"
+        android:padding="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/product_image"
+        app:layout_constraintEnd_toStartOf="@+id/product_image" />
+
+    <View
+        android:id="@+id/divider10"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_image" />
+
+    <ImageView
+        android:id="@+id/booking"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:tint="@color/RecyclerViewBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider10"
+        app:srcCompat="@drawable/selected_dot" />
+
+    <ProgressBar
+        android:id="@+id/booking_confirm_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="60dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="8dp"
+        android:progress="0"
+        android:progressTint="@color/successGreen"
+        android:rotation="90"
+        android:transformPivotX="0dp"
+        android:progressBackgroundTint="@color/gray"
+        app:layout_constraintStart_toStartOf="@+id/booking"
+        app:layout_constraintTop_toTopOf="@+id/booking" />
+
+    <ImageView
+        android:id="@+id/booking_confirm"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:tint="@color/gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/booking"
+        app:srcCompat="@drawable/selected_dot" />
+
+    <ProgressBar
+        android:id="@+id/check_in_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="60dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="8dp"
+        android:progress="0"
+        android:progressTint="@color/successGreen"
+        android:rotation="90"
+        android:transformPivotX="0dp"
+        android:progressBackgroundTint="@color/gray"
+        app:layout_constraintStart_toStartOf="@+id/booking_confirm"
+        app:layout_constraintTop_toTopOf="@+id/booking_confirm" />
+
+    <ImageView
+        android:id="@+id/check_in"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:tint="@color/gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/booking_confirm"
+        app:srcCompat="@drawable/selected_dot" />
+
+    <ProgressBar
+        android:id="@+id/check_out_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="60dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="8dp"
+        android:progress="0"
+        android:progressTint="@color/successGreen"
+        android:rotation="90"
+        android:transformPivotX="0dp"
+        android:progressBackgroundTint="@color/gray"
+        app:layout_constraintStart_toStartOf="@+id/check_in"
+        app:layout_constraintTop_toTopOf="@+id/check_in" />
+
+    <ImageView
+        android:id="@+id/check_out"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:tint="@color/gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_in"
+        app:srcCompat="@drawable/selected_dot" />
+
+    <TextView
+        android:id="@+id/booking_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Booking"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/booking"
+        app:layout_constraintStart_toEndOf="@+id/booking"
+        app:layout_constraintTop_toTopOf="@+id/booking"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/booking_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Mon, 17th Mar 2023 - 8:37 P.M."
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/booking_title"
+        app:layout_constraintStart_toEndOf="@+id/booking_title"
+        app:layout_constraintTop_toTopOf="@+id/booking_title" />
+
+    <TextView
+        android:id="@+id/booking_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Your booking has been completed. "
+        android:textColor="#000000"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/booking_title"
+        app:layout_constraintTop_toBottomOf="@+id/booking_confirm_progress" />
+
+    <TextView
+        android:id="@+id/booking_complete_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Visiting"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/booking_confirm"
+        app:layout_constraintStart_toEndOf="@+id/booking_confirm"
+        app:layout_constraintTop_toTopOf="@+id/booking_confirm" />
+
+    <TextView
+        android:id="@+id/visiting_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Mon, 17th Mar 2023 - 8:57 P.M."
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/booking_complete_title"
+        app:layout_constraintStart_toEndOf="@+id/booking_complete_title"
+        app:layout_constraintTop_toTopOf="@+id/booking_complete_title" />
+
+    <TextView
+        android:id="@+id/check_in_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Check-In"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/check_in"
+        app:layout_constraintStart_toStartOf="@+id/check_out_progress"
+        app:layout_constraintTop_toTopOf="@+id/check_in" />
+
+    <TextView
+        android:id="@+id/check_in_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Mon, 17th Mar 2023 - 9:07 P.M."
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/check_in_title"
+        app:layout_constraintStart_toEndOf="@+id/check_in_title"
+        app:layout_constraintTop_toTopOf="@+id/check_in_title"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/check_out_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Check-Out"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/check_out"
+        app:layout_constraintStart_toEndOf="@+id/check_out"
+        app:layout_constraintTop_toTopOf="@+id/check_out" />
+
+    <TextView
+        android:id="@+id/check_out_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Tue, 21th Mar 2023 - 9:07 P.M."
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/check_out_title"
+        app:layout_constraintStart_toEndOf="@+id/check_out_title"
+        app:layout_constraintTop_toTopOf="@+id/check_out_title" />
+
+    <LinearLayout
+        android:id="@+id/rate_now_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/icon_star"
+            app:tint="#bebebe" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/icon_star"
+            app:tint="#bebebe" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/icon_star"
+            app:tint="#bebebe" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/icon_star"
+            app:tint="#bebebe" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/icon_star"
+            app:tint="#bebebe" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider11"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_out_date" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Your ratings"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider11" />
+</androidx.constraintlayout.widget.ConstraintLayout>

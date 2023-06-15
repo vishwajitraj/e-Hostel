@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    android:elevation="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+
+        <ImageView
+            android:id="@+id/item_image_bestpicked"
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/side_nav_bar" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/slide_background"
+            android:backgroundTint="@color/successGreen"
+            android:orientation="horizontal"
+            android:padding="1dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/item_image_bestpicked">
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp"
+                android:text="4.5"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp"
+                android:src="@drawable/icon_star"
+                app:tint="@color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/total_ratings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="(2,345)"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+
+        <TextView
+            android:id="@+id/product_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:text="kcc Hostel"
+            android:textColor="#90000000"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <TextView
+            android:id="@+id/item_location_bestpicked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:text="knowledge park -2"
+            android:textColor="#70000000"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/product_title" />
+
+        <TextView
+            android:id="@+id/product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="10000"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/cutted_price"
+            app:layout_constraintEnd_toStartOf="@+id/cutted_price"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/cutted_price" />
+
+        <TextView
+            android:id="@+id/cutted_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="20000"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_product_discount"
+            app:layout_constraintStart_toEndOf="@+id/product_price"
+            app:layout_constraintTop_toBottomOf="@+id/item_location_bestpicked" />
+
+        <TextView
+            android:id="@+id/tv_product_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="50% OFF"
+            android:textColor="#00ff00"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/cutted_price"
+            app:layout_constraintStart_toEndOf="@+id/cutted_price"
+            app:layout_constraintTop_toTopOf="@+id/cutted_price" />
+
+        <View
+            android:id="@+id/divider6"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="#80000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/cutted_price"
+            app:layout_constraintStart_toStartOf="@+id/cutted_price"
+            app:layout_constraintTop_toTopOf="@+id/cutted_price" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_to_wishlist_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:rippleColor="@color/red"
+            android:clickable="true"
+            android:tint="#9e9e9e"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_wishlist" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
