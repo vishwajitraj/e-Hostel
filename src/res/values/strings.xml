@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Hosteler</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email_id">Email ID</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="or">or</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account?Sign Up</string>
+    <string name="todo">TODO</string>
+    <string name="already_have_an_account_sign_in">Already have an account?Sign In</string>
+    <string name="todo2">TODO</string>
+    <string name="or2">or</string>
+    <string name="email_id1">Email ID</string>
+    <string name="name">Name</string>
+    <string name="password1">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="provide_your_registered_email_here">Provide your registered email here</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+</resources>
